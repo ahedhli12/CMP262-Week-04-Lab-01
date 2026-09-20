@@ -1,27 +1,33 @@
 # CMP 262 – Week 4, Lab 1
-## Working with Lists, Tuples, and Dictionaries
+## Lists, Tuples, and Dictionaries
 
-### Lab Purpose
+### Objective
 
-In this lab, you will use Python collections to organize and analyze simple student performance data.
+This lab gives you simple practice with three Python data structures:
 
-The lab begins with lists, moves into tuples, introduces dictionaries, and ends with a challenge that combines multiple data structures.
+- Lists
+- Tuples
+- Dictionaries
 
-### Learning Objectives
+Each section includes an example before the task.
 
-By the end of this lab, you should be able to:
+### What You Will Practice
 
-- Create and access lists, tuples, and dictionaries
-- Update and analyze list values
-- Use loops with lists
-- Use list indexing and slicing
-- Find values based on conditions
-- Create and unpack tuples
-- Explain why tuples are immutable
-- Create, access, and update dictionary values
-- Loop through dictionary key-value pairs
-- Store lists inside dictionaries
-- Choose an appropriate data structure for a problem
+You will learn how to:
+
+- Create and display a list
+- Access list items
+- Update a list
+- Use `len()`, `min()`, `max()`, and `sum()`
+- Use a loop with a list
+- Create and access a tuple
+- Unpack a tuple
+- Explain tuple immutability
+- Create a dictionary
+- Access dictionary values using keys
+- Update and add dictionary values
+- Loop through a dictionary
+- Store a list inside a dictionary
 
 ### Assignment File
 
@@ -33,42 +39,19 @@ Also complete:
 
 - `AI-Use-Report.md`
 
-### Lab Structure
+### How to Complete the Lab
 
-#### Part 1 – Lists
-Work with exam scores and practice indexing, updating values, and basic calculations.
-
-#### Part 2 – List Challenges
-Use loops and conditions to analyze scores, including finding values above the average and locating the first high score.
-
-#### Part 3 – Tuples
-Store fixed student information, unpack tuple values, and explore tuple immutability.
-
-#### Part 4 – Dictionaries
-Create a student record using key-value pairs and practice accessing and updating information.
-
-#### Part 5 – Combined Data Challenge
-Work with a dictionary containing lists of course scores and calculate course averages.
-
-#### Part 6 – Choosing a Data Structure
-Decide when a list, tuple, or dictionary is most appropriate.
+1. Open `ListsTuplesDictionaries.ipynb`.
+2. Read the explanation at the beginning of each section.
+3. Run the example code.
+4. Complete the task below the example.
+5. Run your code and check the output.
+6. Complete the reflection.
+7. Complete `AI-Use-Report.md`.
+8. Commit and push your completed work to GitHub.
 
 ### Important
 
-Complete the notebook in order.
+Do not delete the examples, questions, or instructor comments.
 
-Run every code cell and verify your output.
-
-Do not delete the questions or instructor comments.
-
-Do not manually type calculated answers when Python can calculate them.
-
-### AI Use
-
-GitHub Copilot may be used as a tutor or coding assistant.
-
-Copilot should provide explanations, debugging guidance, and small hints rather than complete solutions.
-
-You are responsible for writing, testing, and understanding your own code.
-
-Complete the `AI-Use-Report.md` file before submitting the assignment.
+GitHub Copilot may help explain concepts, errors, or syntax, but you are responsible for writing and understanding your own code.

@@ -9,204 +9,138 @@ In this lab, you will practice three Python data structures:
 - Tuples
 - Dictionaries
 
-You will work inside the `ListsTuplesDictionaries.ipynb` notebook.
+You will complete your work in:
 
-Each section includes an example first. Run the example, look at the output, and then complete the task below it.
+- `ListsTuplesDictionaries.ipynb`
+- `AI-Use-Report.md`
 
-### Before You Start
+### How to Complete the Lab
 
 1. Open `ListsTuplesDictionaries.ipynb` in Visual Studio Code.
-2. Make sure the Python/Jupyter kernel is selected.
-3. Start at the top of the notebook.
-4. Run each example before completing the task below it.
+2. Start at the top of the notebook.
+3. Read each task carefully.
+4. Write your own Python code in the code cell under the task.
+5. Run the cell and check your output.
+6. Fix any errors before moving to the next task.
+
+The README explains the concepts, but it does **not** give the code needed to complete the assignment.
 
 ---
 
 ## Part 1 – Lists
 
-A list stores multiple values in order.
+A **list** stores multiple values in order.
 
-Example:
+Important ideas:
 
-```python
-numbers = [10, 20, 30]
-print(numbers)
-print(numbers[0])
-```
+- List positions are called **indexes**.
+- The first item is at index `0`.
+- Lists can be changed.
+- You can add new items to a list.
+- Python functions such as `len()`, `min()`, `max()`, and `sum()` can be used with numeric lists.
 
-The first item is at index `0`.
+You will work with a list of exam scores.
 
-You will create a list called:
+You will be asked to:
 
-```python
-exam_scores = [78, 84, 91, 87, 95]
-```
+- access specific values
+- find the number of values
+- find the highest and lowest scores
+- calculate an average
+- change a value
+- add a value
+- use a loop and an `if` statement
 
-You will practice:
+### Helpful Reminder
 
-- displaying the first and last score
-- finding the number of scores
-- finding the highest and lowest score
-- calculating the average
-- changing one value
-- adding a new value
-- using a loop to display scores that are 90 or higher
+To access an item in a list, use its index:
 
-Example of a loop:
+`list_name[index]`
 
-```python
-values = [5, 12, 7, 15]
-
-for value in values:
-    if value >= 10:
-        print(value)
-```
+To add an item, think about the list method used in class to add something to the end.
 
 ---
 
 ## Part 2 – Tuples
 
-A tuple is similar to a list, but you cannot directly change its values.
+A **tuple** stores multiple values in order, similar to a list.
 
-Example:
+The important difference is that a tuple is **immutable**, which means its values cannot be changed directly after the tuple is created.
 
-```python
-location = (40.7, -74.0)
+You will be asked to:
 
-print(location)
-print(location[0])
-```
+- create a tuple
+- access a tuple value
+- unpack tuple values into variables
+- explain why tuples cannot be directly changed
 
-You will create:
+### Helpful Reminder
 
-```python
-student_info = ("Jordan", "CMP262", "Data Science")
-```
+Tuple items also use indexes.
 
-You will practice:
-
-- displaying tuple values
-- accessing a value by index
-- unpacking a tuple into variables
-- explaining why tuples are immutable
-
-Example of tuple unpacking:
-
-```python
-point = (3, 5)
-
-x, y = point
-
-print(x)
-print(y)
-```
+Tuple unpacking means taking the values from a tuple and placing them into separate variables.
 
 ---
 
 ## Part 3 – Dictionaries
 
-A dictionary stores information using key-value pairs.
+A **dictionary** stores information using **key-value pairs**.
 
-Example:
+For example, a dictionary might store information such as:
 
-```python
-person = {
-    "name": "Alex",
-    "age": 20
-}
+- a product name
+- its price
+- its quantity
 
-print(person["name"])
-```
+The labels are called **keys**, and the information connected to those labels are the **values**.
 
-Here:
+You will be asked to:
 
-- `"name"` is the key
-- `"Alex"` is the value
+- create a dictionary
+- access a value using a key
+- change an existing value
+- add a new key-value pair
+- loop through keys and values
 
-You will create:
+### Helpful Reminder
 
-```python
-student_record = {
-    "name": "Jordan",
-    "course": "CMP262",
-    "grade": 91
-}
-```
+A dictionary uses a **key** instead of a numeric index to find a value.
 
-You will practice:
+Think about the syntax practiced in class:
 
-- accessing values using keys
-- updating a value
-- adding a new key-value pair
-- looping through a dictionary
+`dictionary_name[key]`
 
-Example of changing and adding values:
-
-```python
-car = {
-    "make": "Toyota",
-    "year": 2025
-}
-
-car["year"] = 2026
-car["color"] = "blue"
-
-print(car)
-```
-
-Example of looping through a dictionary:
-
-```python
-for key, value in car.items():
-    print(key, value)
-```
+When looping through both keys and values, remember the dictionary method discussed in class that returns both.
 
 ---
 
 ## Part 4 – Final Challenge
 
-You will work with a dictionary that stores lists:
+The final challenge combines **dictionaries and lists**.
 
-```python
-course_scores = {
-    "CMP262": [88, 92, 95],
-    "CMP129": [84, 90, 87]
-}
-```
+Each course name is stored as a dictionary key, and each value is a list of scores.
 
-You will:
+You will need to:
 
-1. Display the scores for `CMP262`.
-2. Calculate the average for `CMP262`.
+1. Access one course's list of scores.
+2. Calculate an average using that list.
 3. Loop through the dictionary and display each course with its scores.
 
-Example:
-
-```python
-data = {
-    "A": [1, 2, 3]
-}
-
-print(data["A"])
-```
+This section is meant to make you combine ideas from earlier parts of the lab. The README does not provide the finished code.
 
 ---
 
-## What to Submit
+## Before You Submit
 
-Make sure you complete:
+Make sure:
 
-- `ListsTuplesDictionaries.ipynb`
-- `AI-Use-Report.md`
+- every task is completed
+- every code cell has been run
+- there are no errors
+- the reflection is complete
+- `AI-Use-Report.md` is complete
 
-Before submitting:
-
-1. Run all notebook cells.
-2. Make sure there are no errors.
-3. Save your work.
-4. Commit and push your work to GitHub.
-
-Use:
+Then commit and push your work:
 
 ```
 git status
@@ -215,10 +149,10 @@ git commit -m "Complete Week 4 Lab 1"
 git push
 ```
 
-Then open your GitHub repository and make sure your latest work appears there.
+Open your GitHub repository and confirm that your latest work appears there.
 
 ### Important
 
-Do not delete the examples, questions, or instructor comments.
+Do not delete the questions or instructor comments.
 
-GitHub Copilot may help explain a concept or error, but you are responsible for writing and understanding your own code.
+GitHub Copilot may help explain a concept, syntax, or error, but you are responsible for writing and understanding your own code.
